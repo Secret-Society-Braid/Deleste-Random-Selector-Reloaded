@@ -1,0 +1,51 @@
+name: バグ、不具合レポート
+description: バグ、不具合レポートを見つけた場合はこちらからご報告ください！
+title: "[BUG]: "
+labels: [ "bug", "status:need-triage" ]
+assignees:
+  - hizumiaoba
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## バグ、不具合レポート
+        この度はバグ報告に時間を割いて頂き、ありがとうございます。以下のテンプレートに従って、バグ報告をお願いします。
+        
+        この報告について、詳しい情報が判明次第スレッドにて追記していきます。
+  - type: textarea
+    attributes:
+      label: バグの概要
+      description: バグの概要を簡潔に記述してください。
+      placeholder: "例: 特定の動作が期待通りではない"
+    validations:
+        required: true
+  - type: textarea
+    attributes:
+      label: バグの再現手順
+      description: バグを再現するための手順を箇条書きで記述してください。
+      placeholder: "例: 1. 〇〇を開く 2. 〇〇をクリックする 3. 〇〇が表示される"
+    validations:
+        required: true
+  - type: textarea
+    attributes:
+      label: 期待する動作
+      description: 期待する動作を簡潔に記述してください。
+      placeholder: "例: 〇〇が表示される"
+    validations:
+        required: true
+  - type: dropdown
+    attributes:
+      label: アプリケーションのバージョン
+      description: バグが発生したバージョンを選択してください。
+      multiple: false
+      options:
+        - v0.1.0
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## ログ添付について
+        このアプリケーションは1日サイクルでログファイルを更新しています。「logs」フォルダから該当する日付のログファイルを添付していただけると、バグの原因を特定するのに役立ちます。
+        
+        このレポートを送信した後にコメントする形で添付をお願いします。

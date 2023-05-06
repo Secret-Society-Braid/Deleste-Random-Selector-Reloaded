@@ -1,0 +1,27 @@
+name: 新機能要望、提案
+description: 新しい機能の提案や現状の機能のアップデートなどを要望される場合はこちらから！
+title: "[PROPOSING]: "
+labels: [ "enhancement", "status:need-triage" ]
+assignees:
+  - hizumiaoba
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 新機能要望、追加要望
+        貴方が考える、このアプリケーションに必要な機能を提案してください。
+        
+        この提案について、詳しい情報をスレッドにて追記していきます。
+  - type: textarea
+    attributes:
+      label: 概要
+      description: 概要を簡潔に記述してください。
+      placeholder: "例: 特定の動作についての提案"
+    validations:
+        required: true
+  - type: input
+    attributes:
+      label: 関連する現状の問題点
+      description: もしこの提案が現状の問題点に関連している場合は、番号を記載してください。
+    validations:
+        required: false
