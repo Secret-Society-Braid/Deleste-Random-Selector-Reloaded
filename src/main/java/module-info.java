@@ -4,7 +4,7 @@ module braid.society.secret.drsreloaded {
 
     requires org.slf4j;
     requires lombok;
-    requires java.annotation;
+    requires jsr305;
     requires org.jsoup;
                             
     opens braid.society.secret.drsreloaded to javafx.fxml;
