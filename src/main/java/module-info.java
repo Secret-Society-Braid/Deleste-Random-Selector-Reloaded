@@ -12,6 +12,8 @@ module braid.society.secret.drsreloaded {
 
   opens braid.society.secret.drsreloaded to javafx.fxml;
   exports braid.society.secret.drsreloaded;
+  opens braid.society.secret.drsreloaded.api.database;
+  opens braid.society.secret.drsreloaded.api.settings;
   exports braid.society.secret.drsreloaded.internal.controller;
   opens braid.society.secret.drsreloaded.internal.controller to javafx.fxml;
 }
