@@ -1,4 +1,4 @@
-package braid.society.secret.drsreloaded.internal.concurrent;
+package braid.society.secret.drsreloaded.api.concurrent;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicLong;
