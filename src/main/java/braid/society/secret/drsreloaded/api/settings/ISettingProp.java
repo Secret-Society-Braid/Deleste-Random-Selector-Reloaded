@@ -1,17 +1,15 @@
 package braid.society.secret.drsreloaded.api.settings;
 
 import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 
 public interface ISettingProp {
 
   @Nonnull
   String getKey();
 
-  @Nullable
-  String getValue();
+  boolean getValue();
 
-  void setValue(@Nullable String value);
+  void setValue(boolean value);
 
   @Nonnull
   String getComment();
