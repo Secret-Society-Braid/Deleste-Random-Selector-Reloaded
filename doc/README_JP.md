@@ -19,9 +19,9 @@ English Version available [here](../README.md).
 ## イントロダクション
 
 もうどの曲をプレイするかどうか悩むことからおさらばしましょう！
-このアプリはランダムに曲を選択することができます！
+このアプリはランダムに曲を選択できます！
 
-ほんの数クリックでランダムに曲を選択し、詳細な曲情報を取得し、プレイした曲を共有することができます！
+ほんの数クリックでランダムに曲を選択し、詳細な曲情報を取得し、プレイした曲を共有できます！
 
 ## 使い方
 
@@ -53,17 +53,18 @@ English Version available [here](../README.md).
 ```
 
 **免責事項**: もしビルドに問題があった場合は、まずgradleの公式ドキュメントを確認してください。gradleエコシステムに関するサポートは提供できません。
-また、このリポジトリで作業するには [CONTRIBUTING.md](doc/CONTRIBUTING.md) を読むことをお勧めします。
+また、このリポジトリで作業するには [CONTRIBUTING.md](CONTRIBUTING.md) を読むことをお勧めします。
 
 ## リポジトリへの貢献について
 
-もしコントリビューションに関する詳しい情報を探している場合は、[CONTRIBUTING.md](doc/CONTRIBUTING.md) を読んでください。
+もしコントリビューションに関する詳しい情報を探している場合は、[CONTRIBUTING.md](CONTRIBUTING.md) を読んでください。
 以下に簡単な情報を記載します。
 
 ### コードへの貢献
 
-もし何か問題があった場合や新しい機能を追加したい場合は、このリポジトリに [新しいissueを建てるか、機能要望](https://github.com/Secret-Society-Braid/deleste-random-selector-reloaded/issues/new/choose) を送信してください。
-また、このリポジトリにプルリクエストを送信することもできます。プルリクエストを送信する前に、[CONTRIBUTING.md](doc/CONTRIBUTING.md) を読んでください。
+もし何か問題があった場合や新しい機能を追加したい場合は、このリポジトリに [新しいissueを建てるか、機能要望](https://github.com/Secret-Society-Braid/deleste-random-selector-reloaded/issues/new/choose)
+を送信してください。
+また、このリポジトリにプルリクエストを送信することもできます。プルリクエストを送信する前に、[CONTRIBUTING.md](CONTRIBUTING.md) を読んでください。
 
 ### 翻訳部分への貢献
 
@@ -74,7 +75,7 @@ English Version available [here](../README.md).
 
 ### このアプリについて
 
-このアプリはApache License, Version 2.0のもとで公開されています。詳しいライセンスについては [LICENSE](LICENSE) を参照してください。
+このアプリはApache License, Version 2.0のもとで公開されています。詳しいライセンスについては [LICENSE](../LICENSE) を参照してください。
 
 ### このアプリで使用しているOSSライブラリについて
 
@@ -83,9 +84,6 @@ English Version available [here](../README.md).
 ### `Fujiwarahaji.me API` と `HajimeAPI4J` について
 
 <img src="https://api.fujiwarahaji.me/logo" width="40" alt="ふじわらはじめAPI ロゴマーク">
-
-This app uses the [`Fujiwarahaji.me API`](https://fujiwarahaji.me/api/doc/) to get the Song properties. The `Fujiwarahaji.me API` is licensed under CC BY-NC-SA 4.0.
-Details of the license can be found [here](https://fujiwarahaji.me/api/doc/)
 
 このアプリは [`ふじわらはじめAPI`](https://fujiwarahaji.me/api/doc/) を使用して曲の情報を取得しています。`ふじわらはじめAPI` は CC BY-NC-SA 4.0のもとで公開されています。
 
