@@ -1,6 +1,6 @@
 # Deleste Random Selector -Reloaded-
 
-日本語READMEは [こちら](README_JP.md).
+日本語READMEは [こちら](doc/README_JP.md).
 
 ## Table of Content
 
@@ -13,11 +13,15 @@
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 - [Changelog](#changelog)
-- [Appendix](#appendix)
 - [Disclaimer](#disclaimer)
 - [References](#references)
 
 ## Introduction
+
+This app allows you to select a random song!
+
+A Few steps are required to select a random song, get detailed song information, and share what you
+played!
 
 ## How to use
 
@@ -54,12 +58,13 @@ To build artifact that is the same as production artifact, Please use the `jpack
 
 **disclaimer**: If you have a problem with building the image, please check the gradle official
 documentation first. We cannot provide any support for gradle ecosystem.
-Also, we recommend you to read the [CONTRIBUTING.md](CONTRIBUTING.md) to work with this repository.
+Also, we recommend you to read the [CONTRIBUTING.md](doc/CONTRIBUTING.md) to work with this
+repository.
 
 ## How to contribute
 
 If you look for the complete information about contributing, please
-read [CONTRIBUTING.md](CONTRIBUTING.md).
+read [CONTRIBUTING.md](doc/CONTRIBUTING.md).
 Below is the brief information.
 
 ### coding part
@@ -106,12 +111,38 @@ Details of the license can be found [here](https://github.com/Secret-Society-Bra
 
 ## Contact
 
+Start a
+new [discussion](https://github.com/Secret-Society-Braid/deleste-random-selector-reloaded/discussions)
+thread or file
+an [issue](https://github.com/Secret-Society-Braid/deleste-random-selector-reloaded/issues/new/choose).
+
 ## Changelog
 
 See [release page](https://github.com/Secret-Society-Braid/deleste-random-selector-reloaded/releases).
 
-## Appendix
-
 ## Disclaimer
 
+This app and repository owner both have nothing to do with BANDAI NAMCO Entertainment Inc,
+IDOLM@STER project, and any other related parties.
+
+This app is considered as a derivative work of the IDOLM@STER project. Repository owner might
+delete, be private, be archived (either temporarily or permanently), or stop developing this work
+without any notices or announcements if the IDOLM@STER project team or BANDAI NAMCO Entertainment
+Inc. requests to do so.
+
+`The iDOLM@STER`, `アイドルマスター`, `アイマス` and all related titles, logos, images and characters are
+trademark and copyright of BANDAI NAMCO Entertainment Inc. and/or its subsidiaries.
+
+`Fujiwarahaji.me`, `ふじわらはじめAPI` and all related names and logos are copyright
+of [`デレマス・ミリマス・シャニマス楽曲DB ふじわらはじめ (Deremas, MilliMas, ShinyMas Song DB Fujiwara hajime)`](https://fujiwarahaji.me).
+
 ## References
+
+- [The iDOLM@STER Project](https://idolmaster.jp/)
+- [The iDOLM@STER Cinderella Girls Starlight Stage](https://cinderella.idolmaster.jp/sl-stage/)
+- [The iDOLM@STER Cinderella Girls Starlight Stage Official Beginner's Tutorials `P tore!`](https://cinderella.idolmaster.jp/sl-stage/beginner.html)
+- [Deremas, MilliMas, ShinyMas Song DB Fujiwara hajime](https://fujiwarahaji.me)
+- [Fujiwarahaji.me API](https://fujiwarahaji.me/api/doc/)
+- [HajimeAPI4J](https://github.com/Secret-Society-Braid/HajimeAPI4J)
+- [Owner's Twitter Account](https://twitter.com/hizumiaoba)
+- [Owner's Website](https://hizumiaoba.github.io/Personal-pages/)
