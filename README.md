@@ -78,11 +78,37 @@ We will check the requests, and we provide the translation
 
 ## License
 
+### About this app
+
+This app is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.
+
+### About OSS libraries
+
+All OSS libraries used in this app are licensed under their own respective licenses.
+
+### About the `Fujiwarahaji.me API` and `HajimeAPI4J`
+
+<img src="https://api.fujiwarahaji.me/logo" width="40" alt="Fujiwarahaji.me API logo">
+
+This app uses the [`Fujiwarahaji.me API`](https://fujiwarahaji.me/api/doc/) to get the Song properties. The `Fujiwarahaji.me API` is licensed under CC BY-NC-SA 4.0.
+Details of the license can be found [here](https://fujiwarahaji.me/api/doc/)
+
+Also, This app uses the [`HajimeAPI4J`](https://github.com/Secret-Society-Braid/HajimeAPI4J) Java library to access the `Fujiwarahaji.me API`. The `HajimeAPI4J` is licensed under the Apache License, Version 2.0.
+Details of the license can be found [here](https://github.com/Secret-Society-Braid/HajimeAPI4J/blob/master/LICENSE).
+
 ## Acknowledgements
+
+- Big thanks to people who file the issue and pull request to this repository.
+- Big thanks to people who translate this app to other languages.
+- Big thanks to supporters of this project.
+- Big thanks to the `Fujiwarahaji.me API` developer to be able to get song properties easily.
+- Big thanks to the all contributors who are something to do with the IDOLM@STER Project.
 
 ## Contact
 
 ## Changelog
+
+See [release page](https://github.com/Secret-Society-Braid/deleste-random-selector-reloaded/releases).
 
 ## Appendix
 
