@@ -31,5 +31,5 @@ jobs:
           arguments: |
             test
             -i
-            --test
+            --scan
 
