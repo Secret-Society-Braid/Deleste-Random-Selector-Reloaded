@@ -100,8 +100,8 @@ public class SettingController {
     log.debug("initialized location: {}", location);
 
     this.isNoneCheckboxStatusChanged = true;
-    this.settingManager = new SettingManager();
-    this.settingProps = this.settingManager.readSettings();
+//    this.settingManager = new SettingManager();
+//    this.settingProps = this.settingManager.readSettings();
 
   }
 }
