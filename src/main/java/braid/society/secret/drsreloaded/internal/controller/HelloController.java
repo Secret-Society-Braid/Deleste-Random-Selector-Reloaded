@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -34,6 +35,7 @@ public class HelloController {
             Objects.requireNonNull(HelloApplication.class.getResource("style/setting.css"))
                 .toExternalForm());
         Stage settingStage = new Stage();
+        settingStage.initStyle(StageStyle.UNDECORATED);
         settingStage.setScene(settingScene);
         settingStage.showAndWait();
     }
