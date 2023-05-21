@@ -25,14 +25,14 @@ jobs:
           java-version: 19
       - name: Grant execution permission for wrapper file
         run: chmod +x ./gradlew ./gradlew.bat
-      - name: Gradle Test Action
+      - name: Gradle build action
         uses: gradle/gradle-build-action@v2
         with:
           arguments: |
             jpackageImage
             -i
             --scan
-      - name: upload built artifacts
+      - name: Upload built artifacts
         uses: actions/upload-artifact@v2
         with:
           name: ${{ matrix.os }}-jpackageImage
