@@ -29,7 +29,7 @@ public class HelloController {
     }
 
     void showSettingWindow() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("setting.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("popup.fxml"));
         Scene settingScene = new Scene(fxmlLoader.load());
         settingScene.getStylesheets().add(
             Objects.requireNonNull(HelloApplication.class.getResource("style/setting.css"))
