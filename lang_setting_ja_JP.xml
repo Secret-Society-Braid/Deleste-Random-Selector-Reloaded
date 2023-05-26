@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="btnCancel">キャンセル</entry>
+    <entry key="btnOk">完了</entry>
+    <entry key="labelTitle">各種設定</entry>
+</properties>
