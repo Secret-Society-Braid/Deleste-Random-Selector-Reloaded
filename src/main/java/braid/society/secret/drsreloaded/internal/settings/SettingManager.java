@@ -28,7 +28,7 @@ public class SettingManager implements ISettingManager {
             "アプリケーション起動時に自動的にデータベースを更新するかどうか"),
         new SettingProp("enableAutoAppVersionCheck", true,
             "アプリケーション起動時に自動的にアプリケーションのバージョンを確認するかどうか"),
-        new SettingProp("enableIncludingAdvancedDifficulty", false,
+        new SettingProp("enableIncludingHigherDifficulty", false,
             "Master+以上の高難易度を含めるかどうか"),
         new SettingProp("enableFetchingSongPropsFeature", true,
             "曲詳細情報を外部のAPIより取得する機能の有効化")
