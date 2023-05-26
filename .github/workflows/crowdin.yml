@@ -1,0 +1,6 @@
+# Crowdin configurations
+
+commit_message: 'translation: new translations in %original_file_name% file in %language_name%'
+files:
+  - source: # add source files
+    translation: # add translation file path
