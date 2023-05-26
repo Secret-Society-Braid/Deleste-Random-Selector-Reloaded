@@ -35,17 +35,11 @@ public class SettingController {
   @FXML // fx:id="chkboxEnableAutoDatabaseUpdate"
   private CheckBox chkboxEnableAutoDatabaseUpdate; // Value injected by FXMLLoader
 
-  @FXML // fx:id="chkboxEnableDebuggingFeature"
-  private CheckBox chkboxEnableDebuggingFeature; // Value injected by FXMLLoader
-
   @FXML // fx:id="chkboxEnableFetchingSongPropFeature"
   private CheckBox chkboxEnableFetchingSongPropFeature; // Value injected by FXMLLoader
 
   @FXML // fx:id="chkboxEnableIncludingHigherDifficulty"
   private CheckBox chkboxEnableIncludingHigherDifficulty; // Value injected by FXMLLoader
-
-  @FXML // fx:id="enableAutoFetchingSongProp"
-  private CheckBox enableAutoFetchingSongProp; // Value injected by FXMLLoader
 
   @FXML // fx:id="labelBottomCaution"
   private Label labelBottomCaution; // Value injected by FXMLLoader
@@ -65,6 +59,28 @@ public class SettingController {
   @FXML
   void onBtnOkPressed(ActionEvent event) {
 
+    if (this.isNoneCheckboxStatusChanged) {
+      log.info("no checkbox status changed");
+      log.info("triggered event status: {}", event);
+    } else {
+      log.info("some checkbox status changed");
+      log.info("triggered event status: {}", event);
+      this.settingProps.stream().filter(prop -> prop.getKey().equals("enableAutoAppVersionCheck"))
+          .findFirst().orElseThrow().setValue(this.chkboxAutoAppVersionCheck.isSelected());
+      this.settingProps.stream().filter(prop -> prop.getKey().equals("enableAutoDatabaseUpdate"))
+          .findFirst().orElseThrow().setValue(this.chkboxEnableAutoDatabaseUpdate.isSelected());
+      this.settingProps.stream()
+          .filter(prop -> prop.getKey().equals("enableFetchingSongPropsFeature")).findFirst()
+          .orElseThrow().setValue(this.chkboxEnableFetchingSongPropFeature.isSelected());
+      this.settingProps.stream()
+          .filter(prop -> prop.getKey().equals("enableIncludingHigherDifficulty")).findFirst()
+          .orElseThrow().setValue(this.chkboxEnableIncludingHigherDifficulty.isSelected());
+      this.settingManager.writeSettings(this.settingProps);
+    }
+
+    log.info("attempt to close setting window");
+    Scene scene = btnOk.getScene();
+    scene.getWindow().hide();
   }
 
   @FXML
@@ -78,30 +94,24 @@ public class SettingController {
   @FXML
     // This method is called by the FXMLLoader when initialization is complete
   void initialize() {
-    assert btnCancel
-        != null : "fx:id=\"btnCancel\" was not injected: check your FXML file 'setting.fxml'.";
-    assert btnOk != null : "fx:id=\"btnOk\" was not injected: check your FXML file 'setting.fxml'.";
-    assert chkboxAutoAppVersionCheck
-        != null : "fx:id=\"chkboxAutoAppVersionCheck\" was not injected: check your FXML file 'setting.fxml'.";
-    assert chkboxEnableAutoDatabaseUpdate
-        != null : "fx:id=\"chkboxEnableAutoDatabaseUpdate\" was not injected: check your FXML file 'setting.fxml'.";
-    assert chkboxEnableDebuggingFeature
-        != null : "fx:id=\"chkboxEnableDebuggingFeature\" was not injected: check your FXML file 'setting.fxml'.";
-    assert chkboxEnableFetchingSongPropFeature
-        != null : "fx:id=\"chkboxEnableFetchingSongPropFeature\" was not injected: check your FXML file 'setting.fxml'.";
-    assert chkboxEnableIncludingHigherDifficulty
-        != null : "fx:id=\"chkboxEnableIncludingHigherDifficulty\" was not injected: check your FXML file 'setting.fxml'.";
-    assert enableAutoFetchingSongProp
-        != null : "fx:id=\"enableAutoFetchingSongProp\" was not injected: check your FXML file 'setting.fxml'.";
-    assert labelBottomCaution
-        != null : "fx:id=\"labelBottomCaution\" was not injected: check your FXML file 'setting.fxml'.";
-
     log.debug("initialized resources: {}", resources);
     log.debug("initialized location: {}", location);
 
     this.isNoneCheckboxStatusChanged = true;
-//    this.settingManager = new SettingManager();
-//    this.settingProps = this.settingManager.readSettings();
-
+    this.settingManager = new SettingManager();
+    this.settingProps = this.settingManager.readSettings();
+    // set current setting values
+    this.chkboxAutoAppVersionCheck.setSelected(
+        this.settingProps.stream().filter(prop -> prop.getKey().equals("enableAutoAppVersionCheck"))
+            .findFirst().orElseThrow().getValue());
+    this.chkboxEnableAutoDatabaseUpdate.setSelected(
+        this.settingProps.stream().filter(prop -> prop.getKey().equals("enableAutoDatabaseUpdate"))
+            .findFirst().orElseThrow().getValue());
+    this.chkboxEnableFetchingSongPropFeature.setSelected(this.settingProps.stream()
+        .filter(prop -> prop.getKey().equals("enableFetchingSongPropsFeature")).findFirst()
+        .orElseThrow().getValue());
+    this.chkboxEnableIncludingHigherDifficulty.setSelected(this.settingProps.stream()
+        .filter(prop -> prop.getKey().equals("enableIncludingHigherDifficulty")).findFirst()
+        .orElseThrow().getValue());
   }
 }
