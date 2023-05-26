@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-    <entry key="btnCancel">cancel</entry>
-    <entry key="btnOk">OK</entry>
-    <entry key="labelTitle">Settings</entry>
+    <entry key="btnCancel"></entry>
+    <entry key="btnOk"></entry>
+    <entry key="labelTitle"></entry>
 </properties>

@@ -3,5 +3,9 @@
 <properties>
     <entry key="btnCancel">cancel</entry>
     <entry key="btnOk">OK</entry>
+    <entry key="chkboxEnableAutoAppVersionCheck"></entry>
+    <entry key="chkboxEnableAutoDatabaseUpdate"></entry>
+    <entry key="chkboxEnableFetchingSongPropFeature"></entry>
+    <entry key="chkboxEnableIncludingAdvancedDifficulty"></entry>
     <entry key="labelTitle">Settings</entry>
 </properties>
